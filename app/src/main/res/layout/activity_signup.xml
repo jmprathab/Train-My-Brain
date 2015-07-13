@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/icons"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"></include>
+
+        <EditText
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/cemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="e-mail"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/cpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/cmobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/accent"
+            android:padding="10dp"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/icons" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="resendConfirmation"
+            android:text="Request to Resend Confirmation link?"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="50dp"
+            android:visibility="invisible">
+
+        </TextView>
+
+    </LinearLayout>
+
+</ScrollView>

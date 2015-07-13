@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="thin.blog.banker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".ApplicationHelper"
+        android:allowBackup="true"
+        android:icon="@mipmap/trainmybrainicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Startup"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".Login"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="thin.blog.banker.Login" />
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:parentActivityName=".Login"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="thin.blog.banker.Login" />
+        </activity>
+        <activity
+            android:name=".StartQuiz"
+            android:label="@string/title_activity_start_quiz"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ResendConfirmation"
+            android:label="@string/title_activity_resend_confirmation"
+            android:parentActivityName=".SignUp"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="thin.blog.banker.SignUp" />
+        </activity>
+        <activity
+            android:name=".Quiz"
+            android:label="@string/title_activity_quiz"
+            android:parentActivityName=".StartQuiz">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="thin.blog.banker.StartQuiz" />
+        </activity>
+        <activity
+            android:name=".Result"
+            android:label="@string/title_activity_result"
+            android:parentActivityName=".StartQuiz">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="thin.blog.banker.StartQuiz" />
+        </activity>
+    </application>
+
+</manifest>
