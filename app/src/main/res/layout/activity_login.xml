@@ -76,7 +76,8 @@
                 android:gravity="center"
                 android:onClick="forgotPassword"
                 android:text="Forgot Password?"
-                android:textColor="@color/icons" />
+                android:textColor="@color/icons"
+                android:id="@+id/" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -86,7 +87,8 @@
                 android:gravity="center"
                 android:onClick="createAccount"
                 android:text="Create Account"
-                android:textColor="@color/icons" />
+                android:textColor="@color/icons"
+                android:id="@+id/" />
 
         </LinearLayout>
 

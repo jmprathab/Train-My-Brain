@@ -158,7 +158,6 @@ public class Quiz extends AppCompatActivity {
             startActivity(new Intent(Quiz.this, Login.class));
             finish();
         }
-
     }
 
     private void collectData() {
